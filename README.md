@@ -47,6 +47,40 @@ For example, a device might send a request to 203.0.113.5 (an IPv4 address). The
   }
 },
 {
+  "sender": {
+    "name": "Aries Triputranto",
+    "emailAddress": "aariestriputranto708@gmail.com"
+  },
+  "recipients": [
+    {
+      "name": "Jane Doe",
+      "emailAddress": "jane.doe@example.com"
+    }
+  ],
+  "subject": "Project Update",
+  "body": "lates",
+  "sentDate": "2025-08-23T14:40:00Z"
+},
+{
+  "database_cluster_name": "aries_db_cluster",
+  "nodes": [
+    {
+      "node_id": "node-1",
+      "ip_address": "192.168.1.10",
+      "port": 5432,
+      "status": "active"
+    },
+    {
+      "node_id": "node-2",
+      "ip_address": "192.168.1.11",
+      "port": 5432,
+      "status": "standby"
+    }
+  ],
+  "last_updated": "2025-08-23T14:30:00Z",
+  "description": "JSON index of database nodes for the AriesTriputranto project."
+},
+{
   "kty": "RSA",
   "n": "v1e-G6...<truncated>...aB_B6I",
   "e": "AQAB",
@@ -85,6 +119,14 @@ contoh
  "Cakupan":"AriesTriputranto*google play store";
  "Rahasia":"true"; }
  "URL panggilan balik":"https://play.google.com/store/apps/details?id=com.google.android.apps.maps"
+},
+{
+  "id": "AriesTriputranto",
+  "name": "Aries Triputranto",
+  "email": "aries.t@example.com",
+  "city": "South Jakarta",
+  "bio": "Developer with a passion for cloud computing and APIs.",
+  "last_login": "2025-08-23T15:40:44Z"
 },
 {
   "database_cluster_name": "aries_db_cluster",
