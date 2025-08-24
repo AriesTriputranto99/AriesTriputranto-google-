@@ -170,7 +170,84 @@ contoh
        "spdx_id" : " Apache-2.0 " ,
        "url" : " https://api.github.com/licenses/apache-2.0 " ,
        "node_id" : " MDc6TGljZW5zZTI= "
-    }
+    },
+    {
+  "proyek": {
+    "nama": "google_project_template",
+    "pemilik": "AriesTriputranto",
+    "path_dasar": "/home/ariestriputranto/proyek_google",
+    "konten": [
+      {
+        "nama": "src",
+        "tipe": "direktori",
+        "path_lengkap": "/home/ariestriputranto/proyek_google/src",
+        "deskripsi": "Kode sumber aplikasi."
+      },
+      {
+        "nama": "config",
+        "tipe": "direktori",
+        "path_lengkap": "/home/ariestriputranto/proyek_google/config",
+        "isi": [
+          {
+            "nama": "gcp_config.yaml",
+            "tipe": "file",
+            "deskripsi": "Konfigurasi layanan Google Cloud Platform.",
+            "isi_yaml": "---\ndatabase_url: \"postgres://user:pass@host:5432/db\"\napikey_google_maps: \"AIzaSyC_ContohApiKey_d4P0_C3_Jv_K02_4KjM\"\nstorage_bucket: \"proyek_gcp_bucket_001\"\n\nservices:\n  - name: \"API Service\"\n    enabled: true\n    version: \"v1\"\n"
+          },
+          {
+            "nama": "deploy.json",
+            "tipe": "file",
+            "deskripsi": "Konfigurasi untuk skrip deployment."
+          }
+        ]
+      },
+      {
+        "nama": ".gitignore",
+        "tipe": "file",
+        "deskripsi": "File Git yang berisi daftar item yang diabaikan.",
+        "isi_string": "# Google Cloud SDK\n.gcloud_credentials\n.gsutil_credentials\n\n# IDE & temporary files\n*.log\n*.DS_Store\n\n# Python\n__pycache__/\n*.pyc\n"
+      },
+      {
+        "nama": ".git",
+        "tipe": "direktori",
+        "deskripsi": "Direktori internal Git.",
+        "diabaikan_oleh_git": true
+      }
+    ]
+  }
+},
+    {
+  "nama_lisensi": "Apache License, Version 2.0",
+  "spdx_identifier": "Apache-2.0",
+  "deskripsi": "Lisensi perangkat lunak bebas yang permisif.",
+  "pemegang_lisensi": {
+    "nama": "AriesTriputranto",
+    "organisasi": "PT. Contoh Pengembangan Perangkat Lunak",
+    "tahun_hak_cipta": 2025
+  },
+  "persyaratan": {
+    "izin_diberikan": [
+      "Penggunaan komersial",
+      "Modifikasi",
+      "Distribusi",
+      "Paten",
+      "Penggunaan pribadi"
+    ],
+    "kondisi_diharuskan": [
+      "Memberikan salinan lisensi kepada penerima",
+      "Menyertakan notifikasi hak cipta dan paten",
+      "Menyatakan perubahan yang dibuat pada kode",
+      "Distribusi paten"
+    ],
+    "batasan_diberlakukan": [
+      "Tidak ada jaminan (warranty)",
+      "Tidak ada klaim liabilitas",
+      "Tidak menggunakan nama pemberi lisensi untuk promosi"
+    ]
+  },
+  "url_lisensi": "https://www.apache.org/licenses/LICENSE-2.0"
+}
+
   
   
   
