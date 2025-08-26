@@ -12,15 +12,36 @@ The server processes the request and sends back a response containing a JSON obj
 The JSON object is sent as a stream of bytes, and the characters within it (like object keys and string values) are encoded using UTF-8.
 For example, a device might send a request to 203.0.113.5 (an IPv4 address). The server responds with a JSON object, where the text is encoded in UTF-8, containing data like this:
 
+Scenario
+Let's imagine you have a table named dbo.UserProfile with a column JsonData that stores JSON, and the JSON contains information about a user's domain and other details, like this:
+{
+[
+  "name": "AriesTriputranto",
+  "domain": "IT_Specialist",
+  "contact": {
+    "email": "aries@example.com",
+    "phone": "123-456-7890"
+  ]
+  },
+  "skills": [
+    "SQL Server",
+    "Azure",
+    "JSON"
+  ]
+},
+[
 {
   "status": "online",
   "device_id": 12345
+]
 },
+[
 {
   "portfolioName": "AriesTriputranto's Portfolio",
   "lastUpdated": "2025-08-23T14:15:00Z",
   "totalValue": 150000.75,
   "assets": [
+  ]
     {
       "ticker": "GOOGL",
       "shares": 50,
@@ -37,6 +58,7 @@ For example, a device might send a request to 203.0.113.5 (an IPv4 address). The
     }
   ]
 },
+[
 {
   "status": "success",
   "data": {
@@ -44,13 +66,16 @@ For example, a device might send a request to 203.0.113.5 (an IPv4 address). The
     "name": "Aries Triputranto",
     "email": "aries.triputranto@example.com",
     "lastLogin": "2025-08-23T14:00:00Z"
-  }
-},
+ }
+ ] 
+,
+[
 {
   "sender": {
     "name": "Aries Triputranto",
     "emailAddress": "aariestriputranto708@gmail.com"
-  },
+] 
+},
   "recipients": [
     {
       "name": "Jane Doe",
@@ -77,10 +102,13 @@ For example, a device might send a request to 203.0.113.5 (an IPv4 address). The
       "status": "standby"
     }
   ],
+ [
   "last_updated": "2025-08-23T14:30:00Z",
   "description": "JSON index of database nodes for the AriesTriputranto project."
+]
 },
-{
+[ 
+ {
   "kty": "RSA",
   "n": "v1e-G6...<truncated>...aB_B6I",
   "e": "AQAB",
@@ -90,28 +118,30 @@ For example, a device might send a request to 203.0.113.5 (an IPv4 address). The
   "dp": "H_y6w...<truncated>...q-H5_q",
   "dq": "O_y7x...<truncated>...b_l9B6",
   "qi": "M_l8z...<truncated>...b_l9S4"
-},
-{
+] 
+ },
+[
+ {
   "kty": "RSA",
   "n": "v1e-G6...<truncated>...aB_B6I",
   "e": "AQAB"
-}
-
+  ]
+ }
 # SSL.com
 Mitra keamanan tepercaya Anda!
 Detail Aplikasi.<img width="996" height="992" alt="Screenshot_20250720-205406~2" src="https://github.com/user-attachments/assets/9969a47c-2038-4095-b9db-9c7e142f33af" />
 
-# Kunci Publik RSA dalam format JWK
-contoh 
-{
+# Kunci Publik RSA dalam format JWK 
+ [
   "kty": "RSA",
   "use": "sig",
   "kid": "MySigningKey-2025-08-23",
   "alg": "RS256",
   "n": "v1e-G6...<truncated>...aB_B6I",
   "e": "AQAB"
+]
 },
-{
+[
 "Memodifikasi":{
  "Aplikasi":"Map google play";
  "ID Aplikasi":"NIheXyg32uSIMz8z5bJCnEfgPr5bpCusaFGO0-VH5mE";
@@ -119,15 +149,18 @@ contoh
  "Cakupan":"AriesTriputranto*google play store";
  "Rahasia":"true"; }
  "URL panggilan balik":"https://play.google.com/store/apps/details?id=com.google.android.apps.maps"
-},
-{
+ ]
+  },
+[
+ {
   "id": "AriesTriputranto",
   "name": "Aries Triputranto",
   "email": "aries.t@example.com",
   "city": "South Jakarta",
   "bio": "Developer with a passion for cloud computing and APIs.",
   "last_login": "2025-08-23T15:40:44Z"
-},
+ ]
+  },
 {
   "database_cluster_name": "aries_db_cluster",
   "nodes": [
@@ -170,8 +203,9 @@ contoh
        "spdx_id" : " Apache-2.0 " ,
        "url" : " https://api.github.com/licenses/apache-2.0 " ,
        "node_id" : " MDc6TGljZW5zZTI= "
-    },
-    {
+     }
+    }
+   {
   "proyek": {
     "nama": "google_project_template",
     "pemilik": "AriesTriputranto",
@@ -182,8 +216,10 @@ contoh
         "tipe": "direktori",
         "path_lengkap": "/home/ariestriputranto/proyek_google/src",
         "deskripsi": "Kode sumber aplikasi."
+     ]
       },
       {
+        [
         "nama": "config",
         "tipe": "direktori",
         "path_lengkap": "/home/ariestriputranto/proyek_google/config",
@@ -202,11 +238,13 @@ contoh
         ]
       },
       {
-        "nama": ".gitignore",
+        "nama": "[gitignore",
         "tipe": "file",
         "deskripsi": "File Git yang berisi daftar item yang diabaikan.",
         "isi_string": "# Google Cloud SDK\n.gcloud_credentials\n.gsutil_credentials\n\n# IDE & temporary files\n*.log\n*.DS_Store\n\n# Python\n__pycache__/\n*.pyc\n"
+      ]
       },
+      [
       {
         "nama": ".git",
         "tipe": "direktori",
@@ -216,7 +254,7 @@ contoh
     ]
   }
 },
-    {
+ [
   "nama_lisensi": "Apache License, Version 2.0",
   "spdx_identifier": "Apache-2.0",
   "deskripsi": "Lisensi perangkat lunak bebas yang permisif.",
@@ -224,7 +262,8 @@ contoh
     "nama": "AriesTriputranto",
     "organisasi": "PT. Contoh Pengembangan Perangkat Lunak",
     "tahun_hak_cipta": 2025
-  },
+   }
+  ],
   "persyaratan": {
     "izin_diberikan": [
       "Penggunaan komersial",
